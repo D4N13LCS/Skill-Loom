@@ -22,13 +22,17 @@ nav > ul{
     font-weight: bold;
 }
 
-nav > ul > li:hover{
+nav a{
+    color: black;
+}
+
+nav > ul > li > a:hover{
     color: var(--cor02);
 }
 
-header{
-    display: grid;
-    grid-template-columns: 205px auto;
+header {
+    display: flex;
+    align-items: center;
     height: 200px;
     background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
     color: white;
@@ -37,16 +41,15 @@ header{
     box-shadow: 1px 1px 2px black;
 }
 
-header > div{
-    text-align: center;
-    align-self: center;
-    font-family: 'Kode Mono';
+header > img {
+    height: 120px;
+    margin-right: 20px; 
 }
 
-header > img{
-    height: 120px;
-    order: -1;
-    align-self: center;
+header > div {
+    text-align: center; 
+    font-family: 'Kode Mono';
+    flex-grow: 0.88; 
 }
 
 main{
@@ -74,6 +77,7 @@ main > section.cursos > div {
     max-width: 300px;
     display: flex;
     flex-direction: column;
+    gap: 35px;
     justify-content: flex-end;
     padding: 20px;
     border-radius: 10px;
@@ -90,7 +94,6 @@ main > section.cursos > div > h1{
     font-size: 1.2em;
     font-family: 'Kode Mono';
     text-align: center;
-    margin-bottom: 10px;
 }
 
 main > section.cursos > div > p{
@@ -106,7 +109,6 @@ main > section.cursos > div > button{
     border-radius: 8px;
     width: 100px;
     padding: 10px;
-    margin-top: 12px;
 }
 
 main > section.cursos > div > button:hover{
